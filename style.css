@@ -270,6 +270,22 @@ img {
   }
 }
 
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 50px;
+  color: var(--primary-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+
 .hero-greeting {
   font-size: 1.2rem;
   color: var(--primary-light);
@@ -586,6 +602,39 @@ img {
 .skill-percent {
   color: var(--primary-light);
   font-weight: 600;
+
+/* ===== Skill Badges ===== */
+.skill-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.skill-badge-item i {
+  font-size: 1.2rem;
+}
+
+.skill-badge-item:hover {
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
 }
 
 .skill-bar {
